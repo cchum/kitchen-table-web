@@ -1,0 +1,217 @@
+/* Navbar container */
+.navbar {
+    background-color: #ac5139;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+/* Navbar logo */
+.navbar-logo {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+    background-image: url(image/Logo_3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.navbar-header {
+    color: #e6d9ce;
+    font-size: 48px;
+    font-weight: 1000;
+    letter-spacing: 2px;
+    line-height: 100px;
+    margin: 0;
+    text-shadow: 3px 1px #4d3c33;
+    font-family: sans-serif;
+}
+
+.search-bar {
+    margin-left: 10px; 
+    padding: 5px 10px;
+}
+
+/* Navbar items */
+.navbar-items {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+/* Home on Navbar */
+.navbar-items li a {
+    color: #e6d9ce;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+/* color change when hovering over home, recipes, about, a */
+.navbar-items li a:hover {
+    color: #4d3c33;
+}
+
+/* Creating the background of the home page */
+body{
+    background-image: url(image/fooda.webp);
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+
+ /* the code for "Search your food recipe" */
+.heading h1{ 
+    color: #fff;
+    font-size: 48px;
+    font-weight: 1000;
+    letter-spacing: 2px;
+    padding-top: 2rem;
+    text-align: center;
+    text-shadow: 3px 1px #e6d9ce;
+    font-family: sans-serif;
+}
+
+.searchBox{
+    text-align: center;
+    margin: 3rem;
+}
+.search-bar{
+    width: 400px;
+    border: 40px;
+    border: none;
+    outline: none;
+    border-radius: 2cap;
+    padding: 0.3rem 1rem;
+}
+.notSearch{
+    font-size: 35;
+    color: #e6d9ce;
+    font-weight: 900;
+}
+
+.random-recipes-banner {
+    background-color: #4d3c33;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /* z-index: 999; */
+}
+
+.random-recipes-banner h2 {
+    color: #e6d9ce;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.recipe-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Styles for individual recipe cards */
+.recipe-card {
+    width: calc(140%);
+    margin-bottom: 1;
+    border: 1px solid #ac5139;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 1px #e6d9ce;
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.recipe-card .recipe-details {
+    padding: 1px;
+}
+
+.recipe-card .recipe-details h3 {
+    margin-top: 0;
+    font-size: 15px;
+    color: #e6d9ce;
+}
+
+.recipe-card .recipe-details p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.recipe-card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5));
+    transition: 0.3s all;
+    opacity: 0;
+}
+
+.recipe-card:hover:before {
+    opacity: 1;
+}
+.grocery-list {
+    position: fixed;
+    top: 20%;
+    right: 5%;
+    width: 500px;
+    padding: 10px;
+    background-color: #e6d9ce; 
+    border-left: 1px solid #ac5139; 
+}
+
+.grocery-list h2 {
+    color: #4d3c33;
+    margin-top: 0;
+}
+
+.grocery-list form {
+    margin-bottom: 10px;
+}
+
+.grocery-list input {
+    width: calc(100% - 70px); 
+    margin-right: 5px;
+}
+
+.grocery-list button {
+    padding: 5px 10px;
+    background-color: #ac5139;
+    color: #e6d9ce;
+    border: none;
+    cursor: pointer;
+}
+
+.grocery-list button:hover {
+    background-color: #4d3c33;
+}
+
+.grocery-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.grocery-list li {
+    margin-bottom: 5px;
+}
